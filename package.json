@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "clean:reports": "rm -rfv ./htmlReport && rm -rfv ./cypress/reports/mocha/*.json && rm -rfv ./cypress/videos/*.mp4 && rm -rfv ./cypress/reports/junit/*.xml"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,8 @@
     "mochawesome": "^6.2.2",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
