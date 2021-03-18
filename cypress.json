@@ -1,1 +1,9 @@
-{}
+{
+    "video": true,
+    "screeenshotsFolder": "cypress/screenshots",
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "reporterOptions.json"
+    },
+    "testFiles": "**/*.feature"
+}
